@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  postgresdb: 
+    image: postgres:11.6
+    environment:
+      POSTGRES_DB: klanalk
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    ports:
+      - "5432:5432"
+    expose:
+      - 5432
